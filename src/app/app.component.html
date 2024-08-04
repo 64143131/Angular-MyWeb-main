@@ -1,0 +1,49 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyShop</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">My Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">หน้าแรก</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">สินค้า</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">ติดต่อเรา</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cart">ตะกร้าสินค้า <span id="cart-count">({{ cartCount }})</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="hero-section">
+  <h1>ยินดีต้อนรับสู่ร้านค้าออนไลน์ของเรา!</h1>
+  <p class="lead">เรามีสินค้าหลากหลายให้เลือกช้อป</p>
+  <a href="#products" class="btn btn-custom btn-lg mt-3">ดูสินค้าของเรา</a>
+</div>
+
+<app-products></app-products>
+<app-cart></app-cart>
+<app-about></app-about>
+<app-contact></app-contact>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
